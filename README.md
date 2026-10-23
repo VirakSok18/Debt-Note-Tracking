@@ -9,18 +9,49 @@ A modern debt-tracking application (IOU - I Owe You) built with the MERN stack (
 - **PDF/Image Exports**: Integrated with `jspdf`, `html2canvas`, and `html-to-image` for generating reports.
 
 ## UI Gallery
+
 <div align="center">
-  <img src="IOU%20images/Screenshot%202026-03-27%20142653.png" width="30%" alt="Screen 1" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142723.png" width="30%" alt="Screen 2" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142731.png" width="30%" alt="Screen 3" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142736.png" width="30%" alt="Screen 4" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142746.png" width="30%" alt="Screen 5" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142804.png" width="30%" alt="Screen 6" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142819.png" width="30%" alt="Screen 7" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142842.png" width="30%" alt="Screen 8" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142901.png" width="30%" alt="Screen 9" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20142908.png" width="30%" alt="Screen 10" />
-  <img src="IOU%20images/Screenshot%202026-03-27%20143035.png" width="30%" alt="Screen 11" />
+  <img src="IOU%20images/Screenshot%202026-03-27%20142653.png" width="80%" alt="Screen 1" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142723.png" width="80%" alt="Screen 2" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142731.png" width="80%" alt="Screen 3" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142736.png" width="80%" alt="Screen 4" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142746.png" width="80%" alt="Screen 5" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142804.png" width="80%" alt="Screen 6" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142819.png" width="80%" alt="Screen 7" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142842.png" width="80%" alt="Screen 8" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142901.png" width="80%" alt="Screen 9" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20142908.png" width="80%" alt="Screen 10" />
+</div>
+
+<div align="center">
+  <img src="IOU%20images/Screenshot%202026-03-27%20143035.png" width="80%" alt="Screen 11" />
 </div>
 
 ## 📂 Project Structure
