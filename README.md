@@ -2,14 +2,13 @@
 
 A modern debt-tracking application (IOU - I Owe You) built with the MERN stack (MongoDB, Express, React, Node.js), utilizing Clerk for authentication and Cloudinary for media storage.
 
-## 🌟 Features
+## Features
 - **Secure Authentication**: Powered by Clerk for seamless user login and registration.
 - **Media Management**: Cloudinary integration for handling profile pictures or receipt images.
-- **Responsive UI**: Built with React, Tailwind CSS, and Radix UI primitives.
 - **Analytics Dashboard**: Interactive charts using Recharts.
 - **PDF/Image Exports**: Integrated with `jspdf`, `html2canvas`, and `html-to-image` for generating reports.
 
-## 🖼️ UI Gallery
+## UI Gallery
 <div align="center">
   <img src="IOU%20images/Screenshot%202026-03-27%20142653.png" width="30%" alt="Screen 1" />
   <img src="IOU%20images/Screenshot%202026-03-27%20142723.png" width="30%" alt="Screen 2" />
@@ -39,7 +38,7 @@ IOU/
 └── README.md         # Project documentation
 ```
 
-## 🚀 Setup Guide
+## Setup Guide
 
 ### 1. Prerequisites
 - Node.js installed
