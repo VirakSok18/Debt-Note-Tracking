@@ -1,18 +1,24 @@
 {
   "name": "note_app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Full-stack IOU Debt and Note Tracking Web Application",
+  "main": "api/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm start --prefix backend"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.13.23",
+    "@clerk/express": "^1.7.26",
     "@emailjs/browser": "^4.4.1",
-    "express-session": "^1.18.2"
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0"
   }
 }

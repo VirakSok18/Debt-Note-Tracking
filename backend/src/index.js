@@ -12,13 +12,10 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5001;
 
-// CORS setup (allow both local dev and deployed site)
+// CORS setup (allow local dev and deployed domains)
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",       // local dev
-      "https://iou-com.onrender.com" // deployed frontend
-    ],
+    origin: true,
     credentials: true,
   })
 );
@@ -26,29 +23,34 @@ app.use(
 // Middleware
 app.use(express.json());
 
+// Ensure MongoDB is connected before handling API requests (for Serverless/Vercel)
+app.use("/api", async (req, res, next) => {
+  await connectDb();
+  next();
+});
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/debt-notes", noteRoutes);
 
 // ----------------------
-// Serve frontend build
+// Serve frontend build (when running as standalone Node server)
 // ----------------------
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+if (!process.env.VERCEL) {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+  const frontendDist = path.join(__dirname, "../../frontend/dist");
 
-// Go 2 levels up: backend/src -> backend -> root -> frontend/dist
-const frontendDist = path.join(__dirname, "../../frontend/dist");
+  app.use(express.static(frontendDist));
 
-app.use(express.static(frontendDist));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(frontendDist, "index.html"));
+  });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(frontendDist, "index.html"));
-});
+  app.listen(port, () => {
+    console.log("Server is running on port", port);
+    connectDb();
+  });
+}
 
-// ----------------------
-// Start server
-// ----------------------
-app.listen(port, () => {
-  console.log("✅ Server is running on port", port);
-  connectDb();
-});
+export default app;
